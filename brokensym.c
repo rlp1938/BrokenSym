@@ -81,8 +81,8 @@ int main(int argc, char **argv)
 	// now process the non-option arguments
 
 	// 1.Check that argv[???] exists.
-	if ((topdir)) {
-		strcpy(topdir, topdir);	// default is $HOME
+	if ((argv[optind])) {
+		strcpy(topdir, argv[optind]);	// default is $HOME
 		// Convert relative path to absolute if needed.
 		if (topdir[0] != '/') dorealpath(argv[optind], topdir);
 	}
