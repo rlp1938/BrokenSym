@@ -5,5 +5,5 @@ AM_CFLAGS=-Wall -Wextra
 bin_PROGRAMS=brokensym
 brokensym_SOURCES=brokensym.c
 
-man_MANS=brokensym.1
-EXTRA_BUILD=brokensym.1
+man_MANS=brokensym.1 cleanuputils.1
+EXTRA_BUILD=brokensym.1 cleanuputils.1
