@@ -32,9 +32,6 @@
 
 int filecount;
 
-void *memmem(const void *haystack, size_t haystacklen,
-             const void *needle, size_t needlelen);
-
 struct filedata {
     char *from; // start of file content
     char *to;   // last byte of data + 1
