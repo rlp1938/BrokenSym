@@ -168,7 +168,7 @@ void recursedir(char *headdir)
 			if (stat(newdir, &sb) == -1) {
 				switch(errno) {
 					case ENOENT:
-					fprintf(stdout, "%s\n", newdir);
+					fprintf(stdout, "%s%s\n", newdir, "!*END*!");
 					break;
 					default:
 					perror(newdir);
