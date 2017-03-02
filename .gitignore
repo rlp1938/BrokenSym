@@ -12,3 +12,5 @@
 /Makefile
 /stamp-h1
 /test*
+*.o
+*.c~
